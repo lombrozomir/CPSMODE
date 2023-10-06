@@ -1,9 +1,21 @@
-h1 {
-    background-color: rebeccapurple;
-    color: white;
+body {
+    background-color: #F8F8F8;
+    width: 320px;
 }
 
-h2 {
-    background-color: cornflowerblue;
-    color: blueviolet;
+.main-menu {
+    height: 88px;
+    display: flex;
+    padding-left: 16px;
+    padding-right: 16px;
+    background-color: white;
+    justify-content: space-between;
+    gap: 10px;
 }
+
+.main-menu .burger,.logo,.divider,.repair,.status {
+    margin: auto 0;
+}
+
+
+
