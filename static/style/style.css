@@ -1,20 +1,25 @@
 body {
-    background-color: #F8F8F8;
+    background-color: fuchsia;
     width: 320px;
 }
 
-.main-menu {
-    height: 88px;
-    display: flex;
-    padding-left: 16px;
-    padding-right: 16px;
-    background-color: white;
-    justify-content: space-between;
-    gap: 10px;
-}
+@media (min-width: 320px) and (max-width: 1080px){
+    body {
+        background-color: yellow;
+    }
+    .main-menu {
+        height: 88px;
+        display: flex;
+        padding-left: 16px;
+        padding-right: 16px;
+        background-color: white;
+        justify-content: space-between;
+        gap: 10px;
+    }
 
-.main-menu .burger,.logo,.divider,.repair,.status {
-    margin: auto 0;
+    .main-menu .burger,.logo,.divider,.repair,.status {
+        margin: auto 0;
+    }
 }
 
 
