@@ -28,9 +28,19 @@
         margin: 0;
     }
 
+    .img {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
     .read-next {
         margin-left: 20px;
         display: flex;
+    }
+
+    .img-down {
+        margin-right: 15px;
     }
 
     li {
