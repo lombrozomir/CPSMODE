@@ -4,32 +4,12 @@
         display: none;
     }
 
-    .img {
-        width: 100%;
-        height: auto;
-        margin-top: 20px;
+    .range-menu-desktop {
+        display: none;
     }
 
-    .read-next {
-        margin-left: 20px;
-        display: flex;
-    }
-
-    .img-down {
-        margin-right: 15px;
-    }
-
-    li {
-        cursor: pointer;
-    }
-
-    summary {
-        list-style-type: none;
-    }
-
-    li:focus {
-        border: 2px solid #B8FFEC;
-        border-radius: 10px;
+    .desktop-header {
+        display: none;
     }
 
     .info-company p {
@@ -37,20 +17,8 @@
         margin-left: 10px;
     }
 
-    .range-menu {
-        display: flex;
-        list-style-type: none;
-        overflow-x: auto;
-    }
-
     h1 {
         font-family: 'TTLakes Bold', sans-serif;
-    }
-
-    .range-menu li {
-        padding: 9px 15px;
-        white-space: nowrap;
-        margin-right: 10px;
     }
 
     .green-line {
@@ -81,14 +49,22 @@
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1119px) {
+@media only screen and (min-width: 768px) and (max-width: 1120px) {
 
     .mobile-header {
         display: none;
     }
 
+    .desktop-header {
+        display: none;
+    }
+
+    .range-menu-desktop {
+        display: none;
+    }
+
     .notebook-header {
-        width: 100%;
+        width: 93%;
         height: 88px;
         display: flex;
         padding-left: 40px;
@@ -106,6 +82,11 @@
     .services {
         display: flex;
         margin: 25px 0 auto;
+    }
+
+    .info-company p {
+        font-family: 'TTLakes Regular', sans-serif;
+        margin-left: 24px;
     }
 
 
@@ -143,4 +124,80 @@
     .burger {
         margin-left: 23px;
     }
+}
+
+@media only screen and (min-width: 1120px) {
+
+    /* СКРЫТИЕ СТОРОННИХ РАЗМЕРОВ ЭКРАНОВ */
+    .mobile-header {
+        display: none;
+    }
+
+    .notebook-header {
+        display: none;
+    }
+
+    .services {
+        display: none;
+    }
+
+    .range-menu {
+        display: none;
+    }
+
+    /*/////////////////////////////////////*/
+    .repair, .status {
+        margin: auto 0;
+    }
+
+    .repair {
+        margin-right: 32px;
+    }
+
+    .desktop-header {
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .serv-help {
+        display: flex;
+        margin-left: 450px;
+    }
+
+    h1 {
+        margin-left: 20px;
+        font-family: 'TTLakes Bold', sans-serif;
+    }
+
+    h4 {
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-right: 8px;
+    }
+
+    .range-menu-desktop {
+        display: flex;
+        list-style-type: none;
+        overflow-x: auto;
+    }
+
+    li:focus {
+        border: 2px solid #B8FFEC;
+        border-radius: 10px;
+    }
+
+    li {
+        cursor: pointer;
+    }
+
+    .range-menu-desktop li {
+        padding: 9px 15px;
+        white-space: nowrap;
+        margin-right: 10px;
+    }
+
+    .info-company {
+        margin-left: 34px;
+    }
+
 }

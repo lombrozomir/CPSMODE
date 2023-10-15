@@ -25,12 +25,49 @@ body {
     margin: 0;
 }
 
-
-
 .services {
     display: flex;
     margin: 24px 0 auto;
 }
 
+.range-menu {
+    display: flex;
+    list-style-type: none;
+    overflow-x: auto;
+}
+
+li:focus {
+    border: 2px solid #B8FFEC;
+    border-radius: 10px;
+}
+
+li {
+    cursor: pointer;
+}
+
+.range-menu li {
+    padding: 9px 15px;
+    white-space: nowrap;
+    margin-right: 10px;
+}
+
+summary {
+    list-style-type: none;
+}
+
+.read-next {
+    margin-left: 20px;
+    display: flex;
+}
+
+.img-down {
+    margin-right: 8px;
+}
+
+.img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
 
 
