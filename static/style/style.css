@@ -53,6 +53,7 @@ li {
 
 summary {
     list-style-type: none;
+    white-space: nowrap;
 }
 
 .read-next {

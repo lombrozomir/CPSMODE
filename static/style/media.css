@@ -4,6 +4,10 @@
         display: none;
     }
 
+    .info-company-desktop {
+        display: none;
+    }
+
     .range-menu-desktop {
         display: none;
     }
@@ -52,6 +56,10 @@
 @media only screen and (min-width: 768px) and (max-width: 1120px) {
 
     .mobile-header {
+        display: none;
+    }
+
+    .info-company-desktop {
         display: none;
     }
 
@@ -145,6 +153,10 @@
         display: none;
     }
 
+    .info-company {
+        display: none;
+    }
+
     /*/////////////////////////////////////*/
     .repair, .status {
         margin: auto 0;
@@ -155,8 +167,10 @@
     }
 
     .desktop-header {
+        width: 100%;
         display: flex;
         margin: 0 auto;
+        white-space: nowrap;
     }
 
     .serv-help {
@@ -179,6 +193,7 @@
         display: flex;
         list-style-type: none;
         overflow-x: auto;
+        flex-wrap: wrap;
     }
 
     li:focus {
@@ -196,8 +211,18 @@
         margin-right: 10px;
     }
 
-    .info-company {
+    .info-company-desktop {
+        display: flex;
+    }
+
+    .text {
+        float: left;
+        margin-right: 36px;
         margin-left: 34px;
+    }
+
+    .img {
+        float: right;
     }
 
 }
