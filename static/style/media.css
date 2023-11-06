@@ -52,9 +52,43 @@
     .range-menu {
         display: flex;
     }
+
+    .swiper-pagination {
+        display: flex;
+        margin-top: 60px;
+        position: relative;
+
+    }
+
+    .swiper-container__mobile {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-wrapper {
+        margin-top: 50px;
+    }
+
+    .swiper-slide {
+
+    }
+
+    .swiper-pagination-bullet {
+        background-color: #34343d;
+    }
+
+    .swiper-pagination-bullet-active {
+        background: #B5B6BC;
+    }
+
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1119px) {
+
+    .swiper-container__mobile {
+        display: none;
+    }
 
     .mobile-header {
         display: none;
@@ -131,14 +165,36 @@
     }
 
     .burger {
+        position: relative;
+        display: inline-block;
         margin-left: 23px;
     }
+
+    /*МЕНЮ*/
+    .rectangle {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 320px;
+        height: 100%;
+        background-color: blue;
+        display: none; /* Скрыть прямоугольник по умолчанию */
+    }
+
+    .burger:hover .rectangle {
+        display: block; /* Показать прямоугольник при наведении на изображение */
+    }
+
 }
 
 @media only screen and (min-width: 1120px) {
 
     /* СКРЫТИЕ СТОРОННИХ РАЗМЕРОВ ЭКРАНОВ */
     .mobile-header {
+        display: none;
+    }
+
+    .swiper-container__mobile {
         display: none;
     }
 
