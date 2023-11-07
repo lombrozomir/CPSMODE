@@ -2,7 +2,7 @@
 var swiper = new Swiper('.swiper-container__mobile', {
 
 
-    slidesPerView: 1,
+    slidesPerView: 'auto',
     centeredSlides: false,
     spaceBetween: 40,
     centeredSlides: true,
