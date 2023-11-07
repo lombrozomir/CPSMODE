@@ -41,7 +41,11 @@
         gap: 10px;
     }
 
-    .mobile-header .burger, .logo, .divider, .repair, .status {
+    .mobile-header .burger,
+    .logo,
+    .divider,
+    .repair,
+    .status {
         margin: auto 0;
     }
 
@@ -49,29 +53,51 @@
         margin-right: 16px;
     }
 
+    .status {
+        margin-right: 25px;
+    }
+
     .range-menu {
         display: flex;
     }
 
-    .swiper-pagination {
-        display: flex;
-        margin-top: 60px;
-        position: relative;
+    .brand-content {
+        margin-top: 24px;
+        border-top: solid 1px #D9FFF5;
+        box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3); 
+    }
 
+    .brand-content p {
+        padding: 16px;
+        margin: 0;
+        margin-bottom: 16px;
     }
 
     .swiper-container__mobile {
         position: relative;
+        overflow: hidden;
         width: 100%;
-        height: 100%;
+        
     }
 
-    .swiper-wrapper {
-        margin-top: 50px;
+    .swiper-wriper {
+        display: flex;
+        
     }
 
     .swiper-slide {
+        width: 200px;
+        margin: 0;
+        
+    }
 
+    .swiper-pagination {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+
+        position: relative;
+        
     }
 
     .swiper-pagination-bullet {
@@ -134,7 +160,14 @@
 
 
     /* СТИЛИ ДЛЯ HEADER */
-    .notebook-header .burger, .divider, .logo, .call, .sms, .profile, .repair, .status {
+    .notebook-header .burger,
+    .divider,
+    .logo,
+    .call,
+    .sms,
+    .profile,
+    .repair,
+    .status {
         margin: auto 0;
     }
 
@@ -178,11 +211,13 @@
         width: 320px;
         height: 100%;
         background-color: blue;
-        display: none; /* Скрыть прямоугольник по умолчанию */
+        display: none;
+        /* Скрыть прямоугольник по умолчанию */
     }
 
     .burger:hover .rectangle {
-        display: block; /* Показать прямоугольник при наведении на изображение */
+        display: block;
+        /* Показать прямоугольник при наведении на изображение */
     }
 
 }
@@ -215,7 +250,8 @@
     }
 
     /**/
-    .repair, .status {
+    .repair,
+    .status {
         margin: auto 0;
     }
 

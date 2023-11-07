@@ -19,10 +19,15 @@
     font-style: normal;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     background-color: #F8F8F8;
     font-family: 'TTLakes Regular', sans-serif;
     margin: 0;
+    width: 100vw;
     overflow-x: hidden;
 }
 
