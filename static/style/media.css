@@ -64,7 +64,7 @@
     .brand-content {
         margin-top: 24px;
         border-top: solid 1px #D9FFF5;
-        box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3); 
+        box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
     }
 
     .brand-content p {
@@ -77,18 +77,18 @@
         position: relative;
         overflow: hidden;
         width: 100%;
-        
+
     }
 
     .swiper-wriper {
         display: flex;
-        
+
     }
 
     .swiper-slide {
         width: 200px;
         margin: 0;
-        
+
     }
 
     .swiper-pagination {
@@ -97,11 +97,16 @@
         margin-top: 20px;
 
         position: relative;
-        
+
     }
+
+
 
     .swiper-pagination-bullet {
         background-color: #34343d;
+        width: 10px;
+        height: 10px;
+        
     }
 
     .swiper-pagination-bullet-active {
