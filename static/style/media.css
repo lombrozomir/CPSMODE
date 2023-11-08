@@ -4,6 +4,14 @@
         display: none;
     }
 
+    .brand-content__notebook__desktop {
+        display: none;
+    }
+
+    .more-brand {
+        display: none;
+    }
+
     .grid-container__notebook {
         display: none;
     }
@@ -248,13 +256,13 @@
 
 
     /*МЕНЮ БРЭНДОВ НОУТБУК*/
-    .brand-content {
+    .brand-content__notebook__desktop {
         margin-top: 51px;
         border-top: solid 1px #D9FFF5;
         background-color: white;
     }
 
-    .brand-content p {
+    .brand-content__notebook__desktop p {
         padding-left: 32px;
         padding-top: 16px;
         padding-bottom: 16px;
@@ -427,13 +435,13 @@
 
 
     /*МЕНЮ БРЭНДОВ ДЕСКТОП*/
-    .brand-content {
+    .brand-content__notebook__desktop {
         margin-top: 51px;
         border-top: solid 1px #D9FFF5;
         background-color: white;
     }
 
-    .brand-content p {
+    .brand-content__notebook__desktop p {
         padding-left: 35px;
         padding-top: 16px;
         padding-bottom: 16px;
