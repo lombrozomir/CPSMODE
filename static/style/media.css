@@ -4,10 +4,18 @@
         display: none;
     }
 
-    .info-company-desktop {
+    .grid-container__notebook {
         display: none;
     }
 
+    .grid-container__desktop {
+        display: none;
+    }
+
+
+    .info-company-desktop {
+        display: none;
+    }
 
     .range-menu-desktop {
         display: none;
@@ -73,40 +81,39 @@
         margin-bottom: 16px;
     }
 
+
     .swiper-container__mobile {
         position: relative;
         overflow: hidden;
-        width: 100%;
-
+        margin-left: 16px;
     }
 
     .swiper-wriper {
-        display: flex;
-
+        position: relative;
+        width: 100%;
     }
 
     .swiper-slide {
-        width: 200px;
-        margin: 0;
+        width: 80%;
+    }
+
+    .swiper-slide-next {
+        filter: blur(1px);
 
     }
 
+
     .swiper-pagination {
+        position: relative;
         display: flex;
         justify-content: center;
         margin-top: 20px;
-
-        position: relative;
-
     }
-
-
 
     .swiper-pagination-bullet {
         background-color: #34343d;
         width: 10px;
         height: 10px;
-        
     }
 
     .swiper-pagination-bullet-active {
@@ -117,9 +124,14 @@
 
 @media only screen and (min-width: 768px) and (max-width: 1119px) {
 
-    .swiper-container__mobile {
+    .brand-container__mobile {
         display: none;
     }
+
+    .grid-container__desktop {
+        display: none;
+    }
+
 
     .mobile-header {
         display: none;
@@ -137,15 +149,21 @@
         display: none;
     }
 
+
+    /*НАСТРОЙКА ХЭДЭР ДЛЯ НОУТА*/
     .notebook-header {
-        width: 93%;
+        position: relative;
+        max-width: 100%;
         height: 88px;
         display: flex;
-        padding-left: 40px;
-        padding-right: 20px;
+        overflow: hidden;
         background-color: white;
         justify-content: space-evenly;
         gap: 10px;
+    }
+
+    .notebook-header a {
+        object-fit: cover;
     }
 
     h1 {
@@ -153,9 +171,17 @@
         font-family: 'TTLakes Bold', sans-serif;
     }
 
+    .burger {
+        padding-left: 24px;
+    }
+
     .services {
         display: flex;
         margin: 25px 0 auto;
+    }
+
+    .status {
+        padding-right: 20px;
     }
 
     .info-company p {
@@ -220,10 +246,67 @@
         /* Скрыть прямоугольник по умолчанию */
     }
 
-    .burger:hover .rectangle {
-        display: block;
-        /* Показать прямоугольник при наведении на изображение */
+
+    /*МЕНЮ БРЭНДОВ НОУТБУК*/
+    .brand-content {
+        margin-top: 51px;
+        border-top: solid 1px #D9FFF5;
+        background-color: white;
     }
+
+    .brand-content p {
+        padding-left: 32px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        margin: 0;
+        margin-bottom: 16px;
+    }
+
+    #img {
+        transition: transform 0.5s;
+    }
+
+    .item {
+        animation: fadeIn 1s;
+    }
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .grid-container__notebook {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-left: 32px;
+        margin-right: 32px;
+        column-gap: 32px;
+        row-gap: 16px;
+    }
+
+    .more-brand {
+        margin-top: 24px;
+        margin-left: 32px;
+        margin-bottom: 30px;
+    }
+
+    .hidden-item {
+        display: none;
+    }
+
+    .btn {
+        background: none;
+        border: none;
+        font-family: 'TTLakes Regular', sans-serif;
+        font-size: 16px;
+    }
+
+
 
 }
 
@@ -234,9 +317,14 @@
         display: none;
     }
 
-    .swiper-container__mobile {
+    .grid-container__notebook {
         display: none;
     }
+
+    .brand-container__mobile {
+        display: none;
+    }
+
 
     .notebook-header {
         display: none;
@@ -335,5 +423,73 @@
         float: right;
         margin-right: 28px;
     }
+
+
+
+    /*МЕНЮ БРЭНДОВ ДЕСКТОП*/
+    .brand-content {
+        margin-top: 51px;
+        border-top: solid 1px #D9FFF5;
+        background-color: white;
+    }
+
+    .brand-content p {
+        padding-left: 35px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        margin: 0;
+        margin-bottom: 16px;
+    }
+
+    #img {
+        transition: transform 0.5s;
+    }
+
+    .item {
+        animation: fadeIn 1s;
+    }
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .grid-container__desktop {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin-left: 32px;
+        margin-right: 32px;
+        column-gap: 32px;
+        row-gap: 16px;
+    }
+
+    .item img {
+        width: 100%;
+    }
+
+
+    .more-brand {  
+        margin-top: 24px;
+        margin-left: 32px;
+        margin-bottom: 30px;
+    }
+
+    .hidden-item {
+        display: none;
+    }
+
+    .btn {
+        background: none;
+        border: none;
+        font-family: 'TTLakes Regular', sans-serif;
+        font-size: 16px;
+    }
+
+
 
 }
