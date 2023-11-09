@@ -22,6 +22,7 @@ var swiper = new Swiper('.swiper-container__mobile', {
     }
 });
 
+
 const btn = document.querySelector('.btn');
 const hiddenItems = document.querySelectorAll('.hidden-item');
 
